@@ -2,7 +2,6 @@ import streamlit as st
 import requests
 import pandas as pd
 import os
-from PIL import Image
 
 PAGE_TITLE = "Nandini Shukla|Portfolio"
 PAGE_ICON = ":wave:"
@@ -18,8 +17,6 @@ def load_lottieurl(url):
 
 st.title(":blue[Nandini shukla] :wave:")
 
-img = Image.open('profile.png')
-st.image(img,width=200)
 
 st. header('My Portfolio :sunglasses:')
 #st.write('Here is a breakdown of my portfolio:')
