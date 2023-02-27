@@ -1,9 +1,6 @@
 import streamlit as st
-from matplotlib import image
 import requests
 import pandas as pd
-from streamlit_lottie import st_lottie
-import plotly.express as px
 import os
 from PIL import Image
 
