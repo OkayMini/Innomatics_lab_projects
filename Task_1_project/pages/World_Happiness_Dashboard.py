@@ -1,5 +1,5 @@
 import streamlit as st
-#from matplotlib import image
+from matplotlib import image
 import pandas as pd
 import plotly.express as px
 import os
@@ -13,7 +13,7 @@ PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
 # absolute path of directory_of_interest
 dir_of_interest = os.path.join(PARENT_DIR, "resources")
 
-#IMAGE_PATH = os.path.join(dir_of_interest, "images", "Happiness.jpg")
+IMAGE_PATH = os.path.join(dir_of_interest, "images", "Happiness.jpg")
 
 DATA_PATH = os.path.join(dir_of_interest, "data", "New.csv")
 
@@ -32,6 +32,8 @@ st.write('''
 ## _Dataset_ 
 #### *World Happines Report*
 ''')
+img = image.imread(IMAGE_PATH)
+st.image(img)
 
 df = pd.read_csv(DATA_PATH)
 st.dataframe(df)
