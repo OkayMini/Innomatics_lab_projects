@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 import pandas as pd
+from matplotlib import image
 import os
 
 PAGE_TITLE = "Nandini Shukla|Portfolio"
@@ -14,10 +15,9 @@ def load_lottieurl(url):
   return None
  return r.json()
 
-
 st.title(":blue[Nandini shukla] :wave:")
 
-
+st.image('Profile.png',width=250) 
 st. header('My Portfolio :sunglasses:')
 #st.write('Here is a breakdown of my portfolio:')
 st.write("A data science enthusiast with experience in Python language, have a strong foundation in data analysis, visualization, and machine learning. I'm also comfortable working with various types of data sources, building and evaluating machine learning models, and using data visualization techniques to communicate insights effectively.")
